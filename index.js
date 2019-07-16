@@ -23,7 +23,7 @@ function viewCart() {
   else {
     var string = "In your cart, you have "
     for (var i = 1; i <= cart.length; i++) {
-      if (i === cart.length) {
+      if (i === cart.length && cart.length > 1) {
         string = string + "and " + cart[i - 1].itemName + " at $" + cart[i - 1].itemPrice + "."
       }
       else {
